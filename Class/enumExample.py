@@ -39,4 +39,4 @@ print(Weekday.Tue)
 print(Weekday.Tue.value)
 print(Color.purple)
 print(Color.purple.value)
-print(myColor.purple)   # error
+# print(myColor.purple)   # error
