@@ -1,3 +1,7 @@
+
+# 需要打开两个命令行窗口，一个运行服务器程序，另一个运行客户端程序
+# tcp
+
 import socket
 from threading import Thread
 
@@ -20,5 +24,6 @@ if __name__ == '__main__':
         print('等待客户端连接')
         conn,addr = ss.accept()
         print(f'客服端{addr}连接成功')
+        # 创建新线程来处理TCP连接:
         t = Thread(target=run,args=(conn,))
         t.start()
